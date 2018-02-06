@@ -860,3 +860,14 @@ Started GET "/posts/new" for 38.142.1.26 at 2018-02-06 04:26:26 +0000
 Processing by PostsController#new as HTML
   Rendered posts/_form.html.erb (1.2ms)
   Rendered posts/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 50ms (Views: 35.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/1" for 38.142.1.26 at 2018-02-06 04:26:29 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered authors/_author.html.erb (0.3ms)
+  Rendered posts/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 78ms (Views: 14.1ms | ActiveRecord: 0.9ms)
