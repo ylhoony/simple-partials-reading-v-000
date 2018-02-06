@@ -854,3 +854,9 @@ Processing by PostsController#new as HTML
   Rendered posts/_form.html.erb (0.7ms)
   Rendered posts/new.html.erb within layouts/application (8.5ms)
 Completed 200 OK in 45ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 38.142.1.26 at 2018-02-06 04:26:26 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (1.2ms)
+  Rendered posts/new.html.erb within layouts/application (2.6ms)
